@@ -1,0 +1,175 @@
+/* General */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header
+{
+  width: 100%;
+
+
+}
+
+.header-container
+{
+  position: relative;
+}
+header > .header-container > .header-title
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 1280px;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+
+.header-container > .header-title > #logo
+{
+  display: inline-block;
+  background-color: white;
+  height: 68px;
+  width: 707px;
+  background-image: url('./img/logo.png');
+}
+
+.header-title >
+.shoppingcart
+{
+  position: sticky;
+  top: 0xp;
+  width: 7em;
+  text-align: right;
+}
+.header-title >
+.shoppingcart >
+p
+{
+  font-size: 0.8em;
+}
+
+nav
+{
+  max-width: 1280px;
+  position: sticky;
+  top: 0px;
+  max-width: 1280px;
+  margin: 0px auto;
+  background-color:white;
+}
+nav > ul
+{
+  display: flex;
+  list-style: none;
+
+}
+nav > ul > li
+{
+  display: inline-block;
+  padding: 0.625em;
+  cursor: pointer;
+}
+nav > ul > li:hover
+{
+  text-decoration: underline;
+}
+
+/* Container */
+.container
+{
+  max-width: 1280px;
+  margin: 0px auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+main 
+{
+  margin-top:10px;
+  display: flex;
+}
+
+.categorias
+{
+  display: flex;
+    flex-basis: 12em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.categorias > ul
+{
+  width: 100%;
+  margin-top: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 30px;
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+.contenido {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  gap: 2em;
+  max-width: calc(1280px - 12em);
+  border: 1px solid blue;
+  align-items:flex-start;
+}
+
+.categoria-item{
+  transition: transform 0.3s ease;
+}
+
+.categoria-item:hover 
+{
+  transform:translateY(-5px);
+}
+
+/* Footer */
+footer
+{
+  position: fixed;
+  bottom: 0em;
+  width: 100%;
+  background-color: blue;
+}
+
+footer > .footer-container
+{
+  padding: 1em;
+  line-height: 2em;
+  margin: 0px auto;
+  display: flex;
+  gap: 10em;
+  justify-content: space-evenly;
+  max-width: 1280px;
+  color: white;
+  font-size: 1.1em;
+
+}
+
+.footer-container > ul
+{
+  min-width: 20em;
+  list-style-type: none;
+}
