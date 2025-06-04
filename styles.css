@@ -101,6 +101,52 @@ main
 {
   margin-top:10px;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.productos
+{
+  display: flex;
+}
+
+.quienes
+{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+  
+}
+
+.quienes p
+{
+  margin-bottom: 1em;
+  line-height: 1.8em;
+}
+
+.quienes .narrativa
+{
+  column-count:2;
+  column-gap: 50px;
+  text-align: justify;
+}
+
+.mapa
+{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#contacto
+{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 30px;
 }
 
 .categorias
@@ -132,7 +178,6 @@ main
   flex-grow: 0;
   gap: 2em;
   max-width: calc(1280px - 12em);
-  border: 1px solid blue;
   align-items:flex-start;
 }
 
@@ -172,4 +217,14 @@ footer > .footer-container
 {
   min-width: 20em;
   list-style-type: none;
+}
+
+.footer-container a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }
