@@ -14,21 +14,24 @@ body {
 header
 {
   width: 100%;
-
-
+  border-top: 4px solid dodgerblue;
+  border-bottom: 15px solid dodgerblue;
+  background-color: dodgerblue;
+  margin-bottom: 2em;
 }
 
 .header-container
 {
   position: relative;
+
 }
 header > .header-container > .header-title
 {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items:center;
-    border: 1px solid white;
+
     width: 100%;
     max-width: 1280px;
     gap: 1em;
@@ -39,26 +42,21 @@ header > .header-container > .header-title
 .header-container > .header-title > #logo
 {
   display: inline-block;
-  background-color: white;
+
   height: 68px;
   width: 707px;
   background-image: url('../img/logo.png');
 }
 
-.header-title >
+
 .shoppingcart
 {
-  position: sticky;
-  top: 0xp;
+
   width: 7em;
   text-align: right;
+  margin-left: auto;
 }
-.header-title >
-.shoppingcart >
-p
-{
-  font-size: 0.8em;
-}
+
 
 nav
 {
@@ -67,7 +65,9 @@ nav
   top: 0px;
   max-width: 1280px;
   margin: 0px auto;
-  background-color:white;
+
+  background-color: white;
+  z-index: 9999;
 }
 nav > ul
 {
@@ -95,6 +95,7 @@ nav > ul > li:hover
   display: flex;
   align-items: flex-start;
   overflow: hidden;
+  padding-bottom: 20em;
 }
 
 main 
@@ -230,7 +231,7 @@ footer
   position: fixed;
   bottom: 0em;
   width: 100%;
-  background-color: blue;
+  background-color: dodgerblue;
 }
 
 footer > .footer-container
