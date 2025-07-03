@@ -42,7 +42,7 @@ header > .header-container > .header-title
   background-color: white;
   height: 68px;
   width: 707px;
-  background-image: url('./img/logo.png');
+  background-image: url('../img/logo.png');
 }
 
 .header-title >

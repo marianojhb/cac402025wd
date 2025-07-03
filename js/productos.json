@@ -1,0 +1,290 @@
+[
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Sinusoidal Cincalum X Metro Calibre 25",
+   "codigo": "chap25cinc",
+   "stock": 355,
+   "precio": 10793,
+   "imagen": "./img/productos/chap25cinc.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Sinusoidal Cincalum X Metro Calibre 27",
+   "codigo": "chap27cinc",
+   "stock": 360,
+   "precio": 9086,
+   "imagen": "./img/productos/chap27cinc.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Lisa Laminada En Frio C22 1.22 X 2.44 Mts",
+   "codigo": "laf22",
+   "stock": 0,
+   "precio": 38880,
+   "imagen": "./img/productos/laf22.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Lisa Laminada En Frio C24 1.22 X 2.44 Mts",
+   "codigo": "laf24",
+   "stock": 0,
+   "precio": 31125,
+   "imagen": "./img/productos/laf24.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Lisa Prepintada Color C25 1.22 X 2.44 Mts",
+   "codigo": "lisacolor",
+   "stock": 150,
+   "precio": 43460,
+   "imagen": "./img/productos/lisacolor.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Sinusoidal Galvanizada X Metro Calibre 25",
+   "codigo": "chap25g",
+   "stock": 859,
+   "precio": 10291,
+   "imagen": "./img/productos/chap25g.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Sinusoidal Galvanizada X Metro Calibre 27",
+   "codigo": "KA2412",
+   "stock": 360,
+   "precio": 21862,
+   "imagen": "./img/productos/KA2412.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Sinusoidal Prepintada X Metro Calibre 25",
+   "codigo": "chap25prep",
+   "stock": 540,
+   "precio": 45205,
+   "imagen": "./img/productos/chap25prep.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Tejado Met�lico Curvin Prepintado Color X Metro",
+   "codigo": "C-61",
+   "stock": 140,
+   "precio": 20305,
+   "imagen": "./img/productos/C-61.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Trapezoidal Cincalum X Metro Calibre 25",
+   "codigo": "chaptrap25",
+   "stock": 360,
+   "precio": 32128,
+   "imagen": "./img/productos/chaptrap25.jpg"
+ },
+ {
+   "categoria": "chapas",
+   "producto": "Chapa Trapezoidal Cincalum X Metro Calibre 27",
+   "codigo": "chaptrap27",
+   "stock": 360,
+   "precio": 28153,
+   "imagen": "./img/productos/chaptrap27.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Cielorraso R�stico Andina Isover Caja X 16 Placas",
+   "codigo": "A-191",
+   "stock": 5,
+   "precio": 191721,
+   "imagen": "./img/productos/A-191.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Acuflex Barrera Acustica",
+   "codigo": "A-2004",
+   "stock": 2,
+   "precio": 71823,
+   "imagen": "./img/productos/A-2004.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Acustiver P 50 Mm Isover",
+   "codigo": "A-700",
+   "stock": 3,
+   "precio": 139180,
+   "imagen": "./img/productos/A-700.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Acustiver P500 Isover",
+   "codigo": "A-710",
+   "stock": 2,
+   "precio": 165603,
+   "imagen": "./img/productos/A-710.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Airtech 10Mm De 1 X 30 Mts 1 Cara C/aluminio",
+   "codigo": "A-159",
+   "stock": 3,
+   "precio": 76300,
+   "imagen": "./img/productos/A-159.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Cinta Climaver Isover Fasson 7,6 Cm X 45,7 Mts",
+   "codigo": "A-1142",
+   "stock": 23,
+   "precio": 29300,
+   "imagen": "./img/productos/A-1142.jpg"
+ },
+ {
+   "categoria": "aislaciones",
+   "producto": "Espuma Bekover",
+   "codigo": "Bekover2 ",
+   "stock": 10,
+   "precio": 10398,
+   "imagen": "./img/productos/Bekover2.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Enduido Durlock",
+   "codigo": "enduido2",
+   "stock": 8,
+   "precio": 11154,
+   "imagen": "./img/productos/enduido2.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Masilla Durlock Lpu Bolsa 25 K",
+   "codigo": "A-55",
+   "stock": 8,
+   "precio": 16140,
+   "imagen": "./img/productos/A-55.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Angulo De Ajuste",
+   "codigo": "A-79",
+   "stock": 170,
+   "precio": 878,
+   "imagen": "./img/productos/A-79.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Cantonera",
+   "codigo": "A-74",
+   "stock": 200,
+   "precio": 1506,
+   "imagen": "./img/productos/A-74.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Cinta Gasa Autoadhesiva Para Durlock X 90 Mts",
+   "codigo": "A-63",
+   "stock": 12,
+   "precio": 5973,
+   "imagen": "./img/productos/A-63.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Cinta Papel Para Durlock",
+   "codigo": "A-60",
+   "stock": 20,
+   "precio": 34066,
+   "imagen": "./img/productos/A-60.jpg"
+ },
+ {
+   "categoria": "construccionenseco",
+   "producto": "Masilla Durlock Secado Rapido 25 K",
+   "codigo": "A-57",
+   "stock": 10,
+   "precio": 22800,
+   "imagen": "./img/productos/A-57.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 80X80Mm X 6,00 Mts X 2Mm De Espesor",
+   "codigo": "tubo80x802mm",
+   "stock": null,
+   "precio": 57855,
+   "imagen": "./img/productos/tubo80x802mm.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 100X100 Mm X 6,00 Mts X 2Mm De Espesor",
+   "codigo": "tubo100x100",
+   "stock": null,
+   "precio": 76128,
+   "imagen": "./img/productos/tubo100x100 .jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 1 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",
+   "codigo": "tubo1x16",
+   "stock": null,
+   "precio": 11546,
+   "imagen": "./img/productos/tubo1x16.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 1 Y 1/4 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",
+   "codigo": "tubo114x16mm",
+   "stock": null,
+   "precio": 16729,
+   "imagen": "./img/productos/tubo114x16mm.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 15X15 Mm X 6,00 Mts X 1.2 Mm De Espesor",
+   "codigo": "C-17",
+   "stock": null,
+   "precio": 7015,
+   "imagen": "./img/productos/C-17.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 2 Pulgadas X 6,00 Mts X 1.6 Mm De Espesor",
+   "codigo": "tubo2x16mm",
+   "stock": null,
+   "precio": 27000,
+   "imagen": "./img/productos/tubo2x16mm.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 2 Pulgadas X 6,00 Mts X 2 Mm De Espesor",
+   "codigo": "tubo2x2mm",
+   "stock": null,
+   "precio": 31224,
+   "imagen": "./img/productos/tubo2x2mm.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 0.9 Mm De Espesor",
+   "codigo": "C-16",
+   "stock": null,
+   "precio": 7266,
+   "imagen": "./img/productos/C-16.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 1.2 Mm De Espesor",
+   "codigo": "C-20",
+   "stock": null,
+   "precio": 9459,
+   "imagen": "./img/productos/C-20.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 1.6 Mm De Espesor",
+   "codigo": "C-46",
+   "stock": null,
+   "precio": 12386,
+   "imagen": "./img/productos/C-46.jpg"
+ },
+ {
+   "categoria": "estructurales",
+   "producto": "Tubo Estructural 20X30 Mm X 6,00 Mts X 1.2 Mm De Espesor",
+   "codigo": "C-37",
+   "stock": null,
+   "precio": 11922,
+   "imagen": "./img/productos/C-37.jpg"
+ }
+]
