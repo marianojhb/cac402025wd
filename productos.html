@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Productos | Insuma SRL</title>
+</head>
+
+<body>
+<!-- CONTENT -->
+  <div class="container">
+
+    <main>
+      <div class="productos">
+        <section class="categorias">
+          <ul>
+            <li class="liCategorias"><a href="./productos.html?cat=chapas">Chapas</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=aislaciones">Aislaciones</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=construccionenseco">Construcción en seco</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=estructurales">Caños estructurales</a></li>
+          </ul>
+        </section>
+        <div class="contenido gridproductos" id="contenido" style="width: 100%; height: auto">  
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  
+<!-- END-CONTENT -->
+<footer></footer>
+<!-- Gestión de template: -->
+<script src="../js/injectHtml.js" ></script>
+<script src="../js/vaciarCarrito.js" ></script>
+<script src="../js/ubicarElementoHTML.js" ></script>
+<script src="../js/crearElementoHTML.js" ></script>
+<script src="../js/getProductos.js" ></script>
+<script src="../js/agregarProducto.js" ></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+
+      // Componentes:
+      await injector('../template/head.html','head');
+      await injector('../template/header.html','body');
+      await injector('../template/footer.html','footer');
+      
+      // Gestion de vista de categorias:
+      const params = new URLSearchParams(window.location.search);
+      const value = params.get('cat') || 'all';
+      let categoria = null;
+      let carrito = null;
+
+      switch(value) 
+        {
+            case 'all':
+                console.log("Seleccionaste todos los productos");
+                categoria = '';
+                break;
+            case 'chapas':
+                console.log("Seleccionaste chapas");
+                document.title = "Chapas | " + document.title;
+                categoria = 'chapas';
+                break;
+            case 'aislaciones':
+                console.log("Seleccionaste aislaciones");
+                document.title = "Aislaciones | " + document.title;
+                categoria = 'aislaciones';
+                break;
+            case 'construccionenseco':
+                console.log("Seleccionaste construccionenseco");
+                document.title = "Construcción en seco | " + document.title;
+                categoria = 'construccionenseco';
+                break;
+            case 'estructurales':
+                console.log("Seleccionaste estructurales");
+                document.title = "Estructurales | " + document.title;
+                categoria = 'estructurales';
+                break;
+
+            default:
+              console.log("Categoría no reconocida");
+              categoria = null;
+              break;
+      }
+
+
+      getProductos(categoria).then(productosFiltrados => {
+        const contenedor = document.querySelector('#contenido');
+        contenedor.innerHTML = ''; // limpiar antes
+
+        if (productosFiltrados.length === 0) {
+          contenedor.innerHTML = '<p>No se encontraron productos.</p>';
+          return;
+        }
+        
+        productosFiltrados.forEach(element => {
+          const tarjeta = crearElementoHTML(element);
+          ubicarElementoHTML('#contenido', tarjeta);
+        });
+
+        // Gestión de Carrito de Compras: agregar evento a los botones de Agregar
+        document.querySelectorAll('.btnAgregar').forEach(boton => {
+          boton.addEventListener('click', agregarProducto);
+        });
+
+
+      });
+      
+
+      // Gestion Carrito de compras: Vaciar
+      
+      const botonVaciar = document.querySelector('#btnVaciarCarrito');
+     if (botonVaciar)
+      {
+        botonVaciar.addEventListener('click', vaciarCarrito);
+      }
+      else 
+      {
+        console.error("No se encontró el botón con id 'btnVaciarCarrito'");
+      }
+    
+
+
+    }); // en DOMContentLoaded
+
+
+
+
+</script>
+</body>
+
+</html>

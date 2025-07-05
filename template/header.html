@@ -6,11 +6,26 @@
         </div>
       </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-        <li><a href="index.html">Productos</a></li>
-        <li>Ayuda</li>
-        <li class="shoppingcart"><i class="fas fa-cart-shopping"></i>0 items</li>
-      </ul>
-    </nav>
+    <div id="stickynav">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="productos.html?cat=all">Productos</a></li>
+          <li>Ayuda</li>
+          <li class="shoppingcart" id="shoppingcart">
+            <i class="fas fa-cart-shopping"></i>
+            <div id="divcarrito">
+              <div id="contentcarrito">
+                <div id="listado">
+                  <ol>
+                  </ol>
+                </div>
+                <div data-total=0 id="resumen"><em>No hay items en el carrito.</em></div>
+                <div id="botonesCarrito"><button id="btnVaciarCarrito">Vaciar</button></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+ 

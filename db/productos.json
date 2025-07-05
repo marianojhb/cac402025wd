@@ -65,7 +65,7 @@
  },
  {
    "categoria": "chapas",
-   "producto": "Chapa Tejado Met�lico Curvin Prepintado Color X Metro",
+   "producto": "Chapa Tejado Metálico Curvin Prepintado Color X Metro",
    "codigo": "C-61",
    "stock": 140,
    "precio": 20305,
@@ -89,7 +89,7 @@
  },
  {
    "categoria": "aislaciones",
-   "producto": "Cielorraso R�stico Andina Isover Caja X 16 Placas",
+   "producto": "Cielorraso Rústico Andina Isover Caja X 16 Placas",
    "codigo": "A-191",
    "stock": 5,
    "precio": 191721,
@@ -148,12 +148,12 @@
    "producto": "Enduido Durlock",
    "codigo": "enduido2",
    "stock": 8,
-   "precio": 11154,
+   "precio": 11154.99,
    "imagen": "./img/productos/enduido2.jpg"
  },
  {
    "categoria": "construccionenseco",
-   "producto": "Masilla Durlock Lpu Bolsa 25 K",
+   "producto": "Masilla Durlock Lpu Bolsa 25Kg",
    "codigo": "A-55",
    "stock": 8,
    "precio": 16140,
@@ -203,7 +203,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 80X80Mm X 6,00 Mts X 2Mm De Espesor",
    "codigo": "tubo80x802mm",
-   "stock": null,
+   "stock": 123,
    "precio": 57855,
    "imagen": "./img/productos/tubo80x802mm.jpg"
  },
@@ -211,15 +211,15 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 100X100 Mm X 6,00 Mts X 2Mm De Espesor",
    "codigo": "tubo100x100",
-   "stock": null,
+   "stock": 33,
    "precio": 76128,
-   "imagen": "./img/productos/tubo100x100 .jpg"
+   "imagen": "./img/productos/tubo100x100.jpg"
  },
  {
    "categoria": "estructurales",
    "producto": "Tubo Estructural 1 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",
    "codigo": "tubo1x16",
-   "stock": null,
+   "stock": 12,
    "precio": 11546,
    "imagen": "./img/productos/tubo1x16.jpg"
  },
@@ -227,7 +227,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 1 Y 1/4 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",
    "codigo": "tubo114x16mm",
-   "stock": null,
+   "stock": 1,
    "precio": 16729,
    "imagen": "./img/productos/tubo114x16mm.jpg"
  },
@@ -235,7 +235,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 15X15 Mm X 6,00 Mts X 1.2 Mm De Espesor",
    "codigo": "C-17",
-   "stock": null,
+   "stock": 4,
    "precio": 7015,
    "imagen": "./img/productos/C-17.jpg"
  },
@@ -243,7 +243,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 2 Pulgadas X 6,00 Mts X 1.6 Mm De Espesor",
    "codigo": "tubo2x16mm",
-   "stock": null,
+   "stock": 3,
    "precio": 27000,
    "imagen": "./img/productos/tubo2x16mm.jpg"
  },
@@ -251,7 +251,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 2 Pulgadas X 6,00 Mts X 2 Mm De Espesor",
    "codigo": "tubo2x2mm",
-   "stock": null,
+   "stock": 4,
    "precio": 31224,
    "imagen": "./img/productos/tubo2x2mm.jpg"
  },
@@ -259,7 +259,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 0.9 Mm De Espesor",
    "codigo": "C-16",
-   "stock": null,
+   "stock": 23,
    "precio": 7266,
    "imagen": "./img/productos/C-16.jpg"
  },
@@ -267,7 +267,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 1.2 Mm De Espesor",
    "codigo": "C-20",
-   "stock": null,
+   "stock": 54,
    "precio": 9459,
    "imagen": "./img/productos/C-20.jpg"
  },
@@ -275,7 +275,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 20X20 Mm X 6,00 Mts X 1.6 Mm De Espesor",
    "codigo": "C-46",
-   "stock": null,
+   "stock": 34,
    "precio": 12386,
    "imagen": "./img/productos/C-46.jpg"
  },
@@ -283,7 +283,7 @@
    "categoria": "estructurales",
    "producto": "Tubo Estructural 20X30 Mm X 6,00 Mts X 1.2 Mm De Espesor",
    "codigo": "C-37",
-   "stock": null,
+   "stock": 33,
    "precio": 11922,
    "imagen": "./img/productos/C-37.jpg"
  }

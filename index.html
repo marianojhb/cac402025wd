@@ -6,36 +6,21 @@
 
 <body>
 <!-- CONTENT -->
-  <div class="container">
 
-    <main>
-      <div class="productos">
-        <section class="categorias">
-          <ul>
-            <li>Chapas</li>
-            <li>Aislaciones</li>
-            <li>Construcción en seco</li>
-            <li>Caños estructurales</li>
-          </ul>
-        </section>
-        <div class="contenido">  
-          <div class="categoria-item"><img src="./img/chapas.jpg" alt="chapas"></div>
-          <div class="categoria-item"><img src="./img/aislaciones.jpg" alt="aislaciones"></div>
-          <div class="categoria-item"><img src="./img/construccionenseco.jpg" alt="construccion en seco"></div>
-          <div class="categoria-item"><img src="./img/estructurales.jpg" alt="caños estructurales"></div>
-        </div>
-      </div>
-    </main>
-  </div>
 <!-- END-CONTENT -->
 <footer></footer>
 <!-- Gestión de template: -->
 <script src="../js/injectHtml.js" ></script>
+<script src="../js/cargarCarrito.js" ></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        injector('../template/home.html','body');
         injector('../template/head.html','head');
         injector('../template/header.html','body');
         injector('../template/footer.html','footer');
+
+        
+        // cargarCarrito();
     });
 </script>
 </body>

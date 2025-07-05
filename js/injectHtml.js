@@ -1,9 +1,6 @@
 // HTML injection
-
-
-
 function injector(url, target) {
-  fetch(url)
+  return fetch(url)
     .then(res => res.text())
     .then(html => {
       const elemento = document.querySelector(target);
