@@ -28,9 +28,12 @@
   
 <!-- END-CONTENT -->
 <footer></footer>
+
 <!-- Gestión de template: -->
 <script src="../js/injectHtml.js" ></script>
+<!-- Gestión de carrito: -->
 <script src="../js/vaciarCarrito.js" ></script>
+<script src="../js/cargarCarrito.js" ></script>
 <script src="../js/ubicarElementoHTML.js" ></script>
 <script src="../js/crearElementoHTML.js" ></script>
 <script src="../js/getProductos.js" ></script>
@@ -119,7 +122,8 @@
       {
         console.error("No se encontró el botón con id 'btnVaciarCarrito'");
       }
-    
+      // Gestion Carrito de compras: Llenar
+      cargarCarrito();
 
 
     }); // en DOMContentLoaded

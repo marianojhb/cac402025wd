@@ -41,6 +41,7 @@ header
   border-top: 4px solid dodgerblue;
   border-bottom: 15px solid dodgerblue;
   background-color: dodgerblue;
+  z-index: 999;
 }
 
 .header-container
@@ -88,6 +89,7 @@ header > .header-container > .header-title
   background-color: dodgerblue;
   
   margin-bottom: 2em;
+  z-index: 999;
 }
 
 nav
@@ -317,39 +319,45 @@ footer > .footer-container
 #divcarrito
 {
   position: absolute;
-
   right: 0;
-  width: 500px;
-  top: 0px;
+  top: 50px;
+  width: 600px;
   max-height: 0px;
   overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.3s ease, opacity 0.3s ease, linear 1s;
+  opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.7s;
   pointer-events: none;
-  padding: 50px;
-  padding-right: 0px;
-  padding-top: 50px;
+  
+  
 }
 
 #shoppingcart:hover #divcarrito
 {
-  max-height: 500px;
+  top: 50px;
+  width: 600px;
+  max-height: 1000px;
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.3s ease, visibility 0s linear 0s;
-}
-
+  z-index: 999;
+  
+  }
+  
 #contentcarrito
 {
-  padding: 10px;
-  margin: 0px;
-  background-color: var(--color-secondary);
-  text-align: left;
-  color: black;
-  min-height: 300px;
-  padding-top: 35px;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color-secondary);
+    text-align: left;
+    color: black;
+    min-height: 300px;
+    padding-top: 35px;
+    padding-left: 35px; 
+    display: flex;
+    flex-flow: column nowrap;
+
 }
 
 #contentcarrito ol {
@@ -390,7 +398,7 @@ footer > .footer-container
 {
   border-color: var(--color-primary);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card img
@@ -498,15 +506,27 @@ border: black;
 
 #botonesCarrito
 {
+  margin-top: auto;
   display: block;
   text-align: center;
 
 }
-#btnVaciarCarrito
+#btnVaciarCarrito,
+#btnCheckout
 {
   background-color: dodgerblue;
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 1em;
   border: 1px;
   margin: 1em;
+  color: white;
+}
+
+#btnVaciarCarrito:hover,
+#btnCheckout:hover
+{
+filter: brightness(85%);  
+  transition: filter 0.3s ease; 
+border: black;
+  cursor:pointer;
 }

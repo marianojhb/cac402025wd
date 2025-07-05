@@ -2,7 +2,7 @@
     {
       const olcarrito = document.querySelector('#listado ol');
       let codigo = event.target.getAttribute('data-codigo');
-      let cantidad = document.querySelector(`#${codigo}`).value;
+      let cantidad = parseFloat(document.querySelector(`#${codigo}`).value);
       let subtotal = parseFloat(event.target.getAttribute('data-precio')) * cantidad;
       let stock=  parseInt(event.target.getAttribute('data-stock'));
       let producto = null;
@@ -20,7 +20,7 @@
           codigo: codigo,
           stock: stock,
           precio: parseFloat(event.target.getAttribute('data-precio')),
-          cantidad: parseFloat(cantidad),
+          cantidad: cantidad,
           imagen: event.target.getAttribute('data-imagen'),
           subtotal: subtotal
         };
@@ -30,13 +30,15 @@
         const divresumen = document.querySelector('#resumen');   
         let totalactual = parseFloat(divresumen.getAttribute('data-total'));
         if (totalactual == 0) divresumen.innerHTML = "";
-        let nuevoTotal = totalactual + cantidad;
+        let nuevoTotal = totalactual + subtotal;
         divresumen.setAttribute('data-total', nuevoTotal);
+        divresumen.innerHTML = `Total:   $${nuevoTotal}`;
         
 
         // Agrego un registro a la vista
         let li = document.createElement('li');
-        li.innerHTML = `${item.producto} ${item.cantidad} $${item.subtotal}`;
+        li.innerHTML = 
+          `<em>${item.producto}</em> - (${item.cantidad}) <strong>$${item.subtotal}</strong>`;
         olcarrito.appendChild(li);
         
         // Agrego un item al JSON localStorage 

@@ -11,6 +11,11 @@ function cargarCarrito()
     // Creo la variable JSON del carrito
     let carrito =  JSON.parse(localStorage.getItem('carrito')) || [];
 
+    // Cartel de no hay elementos en el carrito
+    let divresumen = document.querySelector('#resumen');
+
+    (carrito == []) && (divresumen.innerHTML = '<p>No se encontraron productos.</p>');
+
     // Recorro el JSON
     
     carrito.forEach(item => {
@@ -19,7 +24,7 @@ function cargarCarrito()
         const li = document.createElement('li');
 
         li.innerHTML = 
-        `<em>${item.producto}</em> ${item.cantidad} ${item.precio} ${item.subtotal}`;
+        `<em>${item.producto}</em> - (${item.cantidad}) <strong>$${item.subtotal}</strong>`;
         
         olcarrito.appendChild(li);
 

@@ -36,11 +36,27 @@
 <footer></footer>
 <!-- Gestión de template: -->
 <script src="../js/injectHtml.js" ></script>
+<!-- Gestión de carrito: -->
+<script src="../js/cargarCarrito.js" ></script>
+<script src="../js/vaciarCarrito.js" ></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        injector('../template/head.html','head');
-        injector('../template/header.html','body');
-        injector('../template/footer.html','footer');
+    document.addEventListener('DOMContentLoaded', async () => {
+        await injector('../template/head.html','head');
+        await injector('../template/header.html','body');
+        await injector('../template/footer.html','footer');
+        // Gestion Carrito de compras: Vaciar
+        
+            const botonVaciar = document.querySelector('#btnVaciarCarrito');
+            if (botonVaciar)
+            {
+                botonVaciar.addEventListener('click', vaciarCarrito);
+            }
+            else 
+            {
+                console.error("No se encontró el botón con id 'btnVaciarCarrito'");
+            }
+            // Gestion Carrito de compras: Llenar
+            cargarCarrito();
     });
 </script>
 </body>
