@@ -22,6 +22,7 @@ function cargarCarrito()
 
     // Recorro el JSON
     
+    let cantidadArticulos = 0;
     let total = 0;
 
     carrito.forEach(item => {
@@ -39,6 +40,7 @@ function cargarCarrito()
         olcarrito.appendChild(li);
 
         total += parseFloat(item.subtotal);
+        cantidadArticulos += parseInt(item.cantidad);
 
     });
 
@@ -53,12 +55,7 @@ function cargarCarrito()
 
     // Actualizo el data-cantidad del resumen
     const indicadorCantidadItems = document.querySelector('#indicadorCantidadItems');
-    let qtotalactual = parseInt(indicadorCantidadItems.innerHTML) || 0;
-    if (qtotalactual == null) indicadorCantidadItems.innerHTML = "";
-    let nuevoQtotal = qtotalactual + 1;
-    divresumen.setAttribute('data-qitems', nuevoQtotal);
-    
-    indicadorCantidadItems.innerHTML = nuevoQtotal;
+    indicadorCantidadItems.innerHTML = cantidadArticulos;
 
 
 
