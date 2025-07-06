@@ -17,18 +17,13 @@
 <!-- Gestión de template: -->
 <script src="../js/injectHtml.js" ></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        injector('../template/head.html','head');
-        injector('../template/header.html','body');
-        injector('../template/footer.html','footer');
+    document.addEventListener('DOMContentLoaded', async () => {
+        await injector('../template/home.html','body');
+        await injector('../template/head.html','head');
+        await injector('../template/header.html','body');
+        await injector('../template/footer.html','footer');
     });
 </script>
-
-<!-- TODO  MOVER EL VACIADO DEL CARRITO start -->
-
-
-<!-- TODO  MOVER EL VACIADO DEL CARRITO  end -->
-
 </body>
 
 </html>

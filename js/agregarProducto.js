@@ -9,9 +9,9 @@
 
       
       
-      if (cantidad <= stock)
+      if (cantidad > 0 && cantidad <= stock)
       {
-        // si hay stock para agregar al carrito'
+        // si hay stock para agregar al carrito
 
         // armo el diccionario item
         item = {
@@ -25,28 +25,40 @@
           subtotal: subtotal
         };
  
-        // Obtengo el cartel resumen del carrito y 
-        // Actualizo el data-cantidad del resumen
-        const divresumen = document.querySelector('#resumen');   
-        let totalactual = parseFloat(divresumen.getAttribute('data-total'));
-        if (totalactual == 0) divresumen.innerHTML = "";
-        let nuevoTotal = totalactual + subtotal;
-        divresumen.setAttribute('data-total', nuevoTotal);
-        divresumen.innerHTML = `Total:   $${nuevoTotal}`;
+        // Obtengo el cartel resumen del carrito 
+        // const divresumen = document.querySelector('#resumen');   
+        // let totalactual = parseFloat(divresumen.getAttribute('data-total')) ;
+        // if (totalactual == 0) divresumen.innerHTML = "";
+        // let nuevoTotal = (totalactual + subtotal);
         
+        // divresumen.setAttribute('data-total', nuevoTotal);
+        
+        // // le aplico formato al numero:
+        // let nuevoTotalFormateado = '$ ' + nuevoTotal.toLocaleString('es-AR', {
+        //       minimumFractionDigits: 2,
+        //       maximumFractionDigits: 2
+        //     });   
 
-        // Agrego un registro a la vista
-        let li = document.createElement('li');
-        li.innerHTML = 
-          `<em>${item.producto}</em> - (${item.cantidad}) <strong>$${item.subtotal}</strong>`;
-        olcarrito.appendChild(li);
+        // divresumen.innerHTML = `<span><strong>Total:</strong></span><span><strong>${nuevoTotalFormateado}</strong></span>`;
+        
+        // // Agrego el item a la vista
+        // let li = document.createElement('li');
+
+        // // le aplico formato al numero:
+        // let subtotalFormateado = '$ ' + item.subtotal.toLocaleString('es-AR', {
+        //       minimumFractionDigits: 2,
+        //       maximumFractionDigits: 2
+        // });
+        
+        // li.innerHTML = 
+        //   `<span><em>${item.producto}</em> (${item.cantidad})</span><span>${subtotalFormateado}</span>`;
+        // olcarrito.appendChild(li);
         
         // Agrego un item al JSON localStorage 
         carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carrito.push(item);
         localStorage.setItem('carrito', JSON.stringify(carrito));
-        console.log(localStorage.getItem('carrito'));
-
+        cargarCarrito();
       } 
       else
       // si no hay stock para agregar al carrito

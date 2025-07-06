@@ -14,21 +14,62 @@ function cargarCarrito()
     // Cartel de no hay elementos en el carrito
     let divresumen = document.querySelector('#resumen');
 
-    (carrito == []) && (divresumen.innerHTML = '<p>No se encontraron productos.</p>');
+    if (carrito.length == 0) 
+    {
+        divresumen.style = "border-top: 0px";
+        divresumen.innerHTML = '<p>No se encontraron productos.</p>';
+    }
 
     // Recorro el JSON
     
+    let total = 0;
+
     carrito.forEach(item => {
         // creo las variables:
-        let total = 0;
         const li = document.createElement('li');
 
+        let nuevoSubtotalFormateado = '$ ' + item.subtotal.toLocaleString('es-AR', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            });  
+
+
         li.innerHTML = 
-        `<em>${item.producto}</em> - (${item.cantidad}) <strong>$${item.subtotal}</strong>`;
-        
+        `<span>(${item.cantidad}) <em>${item.producto}</em></span><span> ${nuevoSubtotalFormateado}</span>`;
         olcarrito.appendChild(li);
+
+        total += parseFloat(item.subtotal);
 
     });
 
+        let nuevoTotalFormateado = '$ ' + total.toLocaleString('es-AR', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            });  
+    
+
+    divresumen.innerHTML = `<strong>Total</strong><strong>${nuevoTotalFormateado}</strong>`; 
+    divresumen.style.borderTop  = "1px solid #aaaaaa";
+
+    // Actualizo el data-cantidad del resumen
+    const indicadorCantidadItems = document.querySelector('#indicadorCantidadItems');
+    let qtotalactual = parseInt(indicadorCantidadItems.innerHTML) || 0;
+    if (qtotalactual == null) indicadorCantidadItems.innerHTML = "";
+    let nuevoQtotal = qtotalactual + 1;
+    divresumen.setAttribute('data-qitems', nuevoQtotal);
+    
+    indicadorCantidadItems.innerHTML = nuevoQtotal;
+
+
+
+
+
+
+
+
+
+
+
+    return carrito;
 
 }

@@ -60,6 +60,7 @@ header > .header-container > .header-title
   max-width: 1280px;
   gap: 1em;
   margin: 0 auto;
+  user-select: none;
 }
 
 
@@ -327,8 +328,9 @@ footer > .footer-container
   opacity: 1;
   transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.7s;
   pointer-events: none;
-  
-  
+  background-color: var(--color-secondary);
+  border-radius: 1em;
+
 }
 
 #shoppingcart:hover #divcarrito
@@ -340,28 +342,23 @@ footer > .footer-container
   pointer-events: auto;
   transition: opacity 0.3s ease, visibility 0s linear 0s;
   z-index: 999;
-  
-  }
-  
-#contentcarrito
-{
-    padding-right: 0px;
-    padding-top: 0px;
-    padding: 0px;
-    margin: 0px;
-    background-color: var(--color-secondary);
-    text-align: left;
-    color: black;
-    min-height: 300px;
-    padding-top: 35px;
-    padding-left: 35px; 
-    display: flex;
-    flex-flow: column nowrap;
-
+  overflow-y: auto; 
 }
-
-#contentcarrito ol {
-  padding-left: 1.5em;
+  
+#contentcarrito 
+{
+  margin: 0px;
+  text-align: left;
+  color: black;
+  min-height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+justify-content: center;
+  padding-bottom: 5em;  
+  padding-top: 35px;
+  padding-left: 25px; 
+  padding-right: 25px; 
+    
 }
 
 .contenido, .gridproductos
@@ -417,6 +414,7 @@ footer > .footer-container
   text-align: center;
   padding: 0.5em;
 }
+
 .card-footer
 {
   margin-top: auto;
@@ -436,16 +434,13 @@ footer > .footer-container
   transition: transform 0.5s ease;
 }
 
-.btnAgregar:hover
-{
-  transform: scale(1.1);
-}
 
 .btnAgregar:hover
 {
-filter: brightness(85%);  
+  transform: scale(1.1);
+  filter: brightness(85%);  
   transition: filter 0.3s ease; 
-border: black;
+  border: black;
   cursor:pointer;
 }
 
@@ -507,8 +502,10 @@ border: black;
 #botonesCarrito
 {
   margin-top: auto;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
 
 }
 #btnVaciarCarrito,
@@ -518,15 +515,92 @@ border: black;
   padding: 1.5em;
   border-radius: 1em;
   border: 1px;
-  margin: 1em;
   color: white;
+  width: 10em;
 }
 
 #btnVaciarCarrito:hover,
 #btnCheckout:hover
 {
-filter: brightness(85%);  
+  filter: brightness(85%);  
   transition: filter 0.3s ease; 
-border: black;
   cursor:pointer;
 }
+
+
+#listado ol li
+{
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+#resumen
+{
+  display: flex; 
+  justify-content: space-between; 
+  border-top: 1px solid grey; 
+  margin-top: 0.6em;  
+  padding-top: 1.3em;
+}
+
+
+
+/* checkout */
+
+  .formcheckout {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+
+  .formcheckout div {
+    margin-bottom: 1.5em;
+  }
+
+  .formcheckout label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .formcheckout input,
+  .formcheckout textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out;
+  }
+
+  .formcheckout input:focus,
+  .formcheckout input:hover,
+  .formcheckout textarea:focus {
+    outline: none;
+    border-color: dodgerblue;
+  }
+
+  .formcheckout button {
+    width: 20em;
+    margin: 0 auto;
+    padding: 0.75em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+  }
+
+  .formcheckout button:hover {
+    background-color: #1c75d8;
+  }

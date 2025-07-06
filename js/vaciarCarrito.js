@@ -13,4 +13,7 @@
 
     // vuelve a 0 el data-total del div resumen
     divresumen.setAttribute('data-total', 0);
+    indicadorCantidadItems.innerHTML = "";
+    divresumen.style.borderTop  = "0px";
+
   }
