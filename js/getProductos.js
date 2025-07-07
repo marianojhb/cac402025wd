@@ -1,4 +1,4 @@
-    function getProductos(category) 
+    export function getProductos(category) 
     {
       return fetch('./db/productos.json')
         .then(response => {

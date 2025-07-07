@@ -5,36 +5,47 @@
 </head>
 
 <body class="theme-light">
+<header></header>
 <!-- CONTENT -->
-
+ <div class="container">
+    <main>
+      <div class="productos">
+        <section class="categorias">
+          <ul>
+            <li class="liCategorias"><a href="./productos.html?cat=chapas">Chapas</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=aislaciones">Aislaciones</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=construccionenseco">Construcción en seco</a></li>
+            <li class="liCategorias"><a href="./productos.html?cat=estructurales">Caños estructurales</a></li>
+          </ul>
+        </section>
+        <div class="contenido" id="contenido">  
+          <div class="categoria-item">
+            <a href="./productos.html?cat=chapas">
+              <img src="./img/chapas.jpg" alt="chapas">
+            </a>
+            </div>
+          <div class="categoria-item">
+            <a href="./productos.html?cat=aislaciones">
+              <img src="./img/aislaciones.jpg" alt="aislaciones">
+            </a>
+          </div>
+          <div class="categoria-item">
+            <a href="./productos.html?cat=construccionenseco">
+            <img src="./img/construccionenseco.jpg" alt="construccion en seco">
+          </a>
+          </div>
+          <div class="categoria-item">
+            <a href="./productos.html?cat=estructurales">
+              <img src="./img/estructurales.jpg" alt="caños estructurales">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+</div>
 <!-- END-CONTENT -->
 <footer></footer>
-<!-- Gestión de template: -->
-<script src="./js/injectHtml.js" ></script>
-<!-- Gestión de carrito: -->
-<script src="./js/cargarCarrito.js" ></script>
-<script src="./js/vaciarCarrito.js" ></script>
-<script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        await injector('./template/home.html','body');
-        await injector('./template/head.html','head');
-        await injector('./template/header.html','body');
-        await injector('./template/footer.html','footer');
-      // Gestion Carrito de compras: Vaciar
-      
-        const botonVaciar = document.querySelector('#btnVaciarCarrito');
-        if (botonVaciar)
-        {
-            botonVaciar.addEventListener('click', vaciarCarrito);
-        }
-        else 
-        {
-            console.error("No se encontró el botón con id 'btnVaciarCarrito'");
-        }
-        // Gestion Carrito de compras: Llenar
-        cargarCarrito();
-    });
-</script>
+<script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

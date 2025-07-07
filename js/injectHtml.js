@@ -1,5 +1,5 @@
 // HTML injection
-function injector(url, target) {
+export function injector(url, target) {
   return fetch(url)
     .then(res => res.text())
     .then(html => {

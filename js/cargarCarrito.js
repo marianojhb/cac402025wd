@@ -1,4 +1,4 @@
-function cargarCarrito()
+export function cargarCarrito()
 {
     // Ubico el lugar donde se va a cargar
     let olcarrito = document.querySelector('#listado ol');

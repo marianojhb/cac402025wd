@@ -1,4 +1,6 @@
-    function agregarProducto(event)
+    import { cargarCarrito } from "./cargarCarrito.js";
+    
+    export function agregarProducto(event)
     {
       const olcarrito = document.querySelector('#listado ol');
       let codigo = event.target.getAttribute('data-codigo');
@@ -14,7 +16,7 @@
         // si hay stock para agregar al carrito
 
         // armo el diccionario item
-        item = {
+        let item = {
           categoria: event.target.getAttribute('data-categoria'),
           producto: event.target.getAttribute('data-producto'),
           codigo: codigo,
@@ -55,7 +57,7 @@
         // olcarrito.appendChild(li);
         
         // Agrego un item al JSON localStorage 
-        carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carrito.push(item);
         localStorage.setItem('carrito', JSON.stringify(carrito));
         cargarCarrito();

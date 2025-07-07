@@ -1,5 +1,5 @@
 // Vaciar Carrito
-  function vaciarCarrito() {
+  export function vaciarCarrito() {
     // elimina los nodos <li> del carrito de compras, si tuviera el ol:
     const olcarrito = document.querySelector('#listado ol');
     olcarrito.hasChildNodes() && (olcarrito.innerHTML = "");

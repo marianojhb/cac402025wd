@@ -1,4 +1,4 @@
-function enviarFormulario(event) {
+export function enviarFormulario(event) {
     event.preventDefault();
 
     // chequeamos que se completó todo:

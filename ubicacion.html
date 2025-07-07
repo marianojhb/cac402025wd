@@ -5,9 +5,9 @@
 </head>
 
 <body class="theme-light">
+<header></header>
 <!-- CONTENT -->
   <div class="container">
-
     <main>
         <h1>Donde estamos</h1>
         <div class="mapa">
@@ -17,31 +17,7 @@
   </div>
 <!-- END-CONTENT -->
 <footer></footer>
-<!-- Gestión de template: -->
-<script src="./js/injectHtml.js" ></script>
-<!-- Gestión de carrito: -->
-<script src="./js/cargarCarrito.js" ></script>
-<script src="./js/vaciarCarrito.js" ></script>
-<script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        await injector('./template/head.html','head');
-        await injector('./template/header.html','body');
-        await injector('./template/footer.html','footer');
-      // Gestion Carrito de compras: Vaciar
-      
-        const botonVaciar = document.querySelector('#btnVaciarCarrito');
-        if (botonVaciar)
-        {
-            botonVaciar.addEventListener('click', vaciarCarrito);
-        }
-        else 
-        {
-            console.error("No se encontró el botón con id 'btnVaciarCarrito'");
-        }
-        // Gestion Carrito de compras: Llenar
-        cargarCarrito();
-    });
-</script>
+<script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

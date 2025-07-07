@@ -1,4 +1,4 @@
-      function crearElementoHTML (objetoJSON)
+      export function crearElementoHTML (objetoJSON)
       {
         let precioFormateado = '$ ' + objetoJSON.precio.toLocaleString('es-AR', {
         minimumFractionDigits: 2,
