@@ -1,6 +1,6 @@
     function getProductos(category) 
     {
-      return fetch('../db/productos.json')
+      return fetch('./db/productos.json')
         .then(response => {
           if (!response.ok) {
             throw new Error("Error en la respuesta: " + response.status);
