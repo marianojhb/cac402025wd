@@ -5,7 +5,7 @@ export function injector(url, target) {
     .then(html => {
       const elemento = document.querySelector(target);
       if (elemento) {
-        elemento.insertAdjacentHTML('afterbegin', html);
+        elemento.innerHTML=html;
       } else {
         console.warn(`No se encontró el selector: ${target}`);
       }

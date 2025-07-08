@@ -7,6 +7,7 @@ import { enviarFormulario } from './enviarFormulario.js';
 import { getProductos } from './getProductos.js';
 import { ubicarElementoHTML} from './ubicarElementoHTML.js';
 import { vaciarCarrito } from './vaciarCarrito.js';
+import { showPage } from './showPage.js';
 
 
 
@@ -23,7 +24,30 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     if(window.location.pathname.includes("checkout.html"))
     {
         
-        
+    const botonVaciar = document.querySelector('#btnVaciarCarrito');
+    if (botonVaciar)
+    {
+        botonVaciar.addEventListener('click', vaciarCarrito);
+    }
+    else 
+    {
+        console.error("No se encontró el botón con id 'btnVaciarCarrito'");
+        }
+
+
+
+    // Agregamos un evento para el boton enviar formulario
+    const botonEnviar = document.querySelector('#botonEnviar');
+    if (botonEnviar)
+    {
+        botonEnviar.addEventListener('click', enviarFormulario);
+    }
+    else
+    {   
+        console.log("ADVERTENCIA: No se encontró el botón con ID 'botonEnviar'.");
+    }
+
+
     }
     
     
@@ -161,7 +185,17 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     
     if(window.location.pathname.includes("quienessomos.html"))
     {
-        
+        const botonVaciar = document.querySelector('#btnVaciarCarrito');
+        if (botonVaciar)
+        {
+            botonVaciar.addEventListener('click', vaciarCarrito);
+        }
+        else 
+        {
+            console.error("No se encontró el botón con id 'btnVaciarCarrito'");
+        }
+        cargarCarrito();
+
     }
 
 
@@ -206,11 +240,6 @@ document.addEventListener('DOMContentLoaded', async ()=>{
         // Gestion Carrito de compras: Llenar
         cargarCarrito();
     }
-
-            
-            
-
-
 
 
 });

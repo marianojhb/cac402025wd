@@ -5,8 +5,15 @@
 </head>
 
 <body class="theme-light">
+<header></header>
 <!-- CONTENT -->
-
+<div class="page" data-link="checkout" data-file="checkout.html" id="placeholder-checkout">checkout</div>
+<div class="page" data-link="contacto" data-file="contacto.html" id="placeholder-contacto">contacto</div>
+<div class="page" data-link="index2" data-file="index2.html" id="placeholder-index2">index2</div>
+<div class="page" data-link="productos" data-file="productos.html" id="placeholder-productos">productos</div>
+<div class="page" data-link="quienessomos" data-file="quienessomos.html" id="placeholder-quienessomos">quienessomos</div>
+<div class="page" data-link="resenas" data-file="resenas.html" id="placeholder-resenas">resenas</div>
+<div class="page" data-link="ubicacion" data-file="ubicacion.html" id="placeholder-ubicacion">ubicacion</div>
 
 
 
@@ -14,16 +21,7 @@
 
 <!-- END-CONTENT -->
 <footer></footer>
-<!-- Gestión de template: -->
-<script src="../js/injectHtml.js" ></script>
-<script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        await injector('../template/home.html','body');
-        await injector('../template/head.html','head');
-        await injector('../template/header.html','body');
-        await injector('../template/footer.html','footer');
-    });
-</script>
+<script type="module" src="../js/script2.js"></script>
 </body>
 
 </html>

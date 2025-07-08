@@ -80,6 +80,7 @@ header > .header-container > .header-title
   width: 7em;
   text-align: right;
   margin-left: auto;
+  border: 1px solid orange;
 }
 
 #stickynav{
@@ -314,6 +315,7 @@ footer > .footer-container
 
 #shoppingcart {
   position:relative;
+    margin-left: auto;
 }
 
 #divcarrito
@@ -357,7 +359,6 @@ footer > .footer-container
   padding-left: 25px; 
   padding-right: 25px; 
   height: 100%;
-  border: 1px solid violet;
     
 }
 
