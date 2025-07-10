@@ -21,6 +21,7 @@ export function enviarFormulario(event) {
     let sumaTotal = 0.0;
     let resumen = "";
 
+
     for (let item of carrito) {
         sumaTotal += parseFloat(item.subtotal);
 
@@ -34,6 +35,14 @@ export function enviarFormulario(event) {
             maximumFractionDigits: 2
         });
 
+        // let carrito = cargarCarrito();
+        // if (carrito.lenght != 0)
+        // {
+        //     const checkoutresumen = document.getElementById('#checkout-resumen');
+        //     let listItem = document.createElement('li');
+        //     listItem.innerHTML = `${item.codigo} ${item.producto} [${item.cantidad} x ${precioFormateado}] ... ${subtotalFormateado} \n`
+        //     checkoutresumen.appendChild(listItem);
+        // }
 
         resumen += `${item.codigo} ${item.producto} [${item.cantidad} x ${precioFormateado}] ... ${subtotalFormateado} \n`;
     }

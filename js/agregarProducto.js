@@ -26,37 +26,6 @@
           imagen: event.target.getAttribute('data-imagen'),
           subtotal: subtotal
         };
- 
-        // Obtengo el cartel resumen del carrito 
-        // const divresumen = document.querySelector('#resumen');   
-        // let totalactual = parseFloat(divresumen.getAttribute('data-total')) ;
-        // if (totalactual == 0) divresumen.innerHTML = "";
-        // let nuevoTotal = (totalactual + subtotal);
-        
-        // divresumen.setAttribute('data-total', nuevoTotal);
-        
-        // // le aplico formato al numero:
-        // let nuevoTotalFormateado = '$ ' + nuevoTotal.toLocaleString('es-AR', {
-        //       minimumFractionDigits: 2,
-        //       maximumFractionDigits: 2
-        //     });   
-
-        // divresumen.innerHTML = `<span><strong>Total:</strong></span><span><strong>${nuevoTotalFormateado}</strong></span>`;
-        
-        // // Agrego el item a la vista
-        // let li = document.createElement('li');
-
-        // // le aplico formato al numero:
-        // let subtotalFormateado = '$ ' + item.subtotal.toLocaleString('es-AR', {
-        //       minimumFractionDigits: 2,
-        //       maximumFractionDigits: 2
-        // });
-        
-        // li.innerHTML = 
-        //   `<span><em>${item.producto}</em> (${item.cantidad})</span><span>${subtotalFormateado}</span>`;
-        // olcarrito.appendChild(li);
-        
-        // Agrego un item al JSON localStorage 
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carrito.push(item);
         localStorage.setItem('carrito', JSON.stringify(carrito));

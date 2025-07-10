@@ -1,4 +1,4 @@
-export function cargarCarrito()
+export function  cargarCarrito()
 {
     // Ubico el lugar donde se va a cargar
     let olcarrito = document.querySelector('#listado ol');
@@ -9,7 +9,7 @@ export function cargarCarrito()
     olcarrito.innerHTML = '';
     
     // Creo la variable JSON del carrito
-    let carrito =  JSON.parse(localStorage.getItem('carrito')) || [];
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
     // Cartel de no hay elementos en el carrito
     let divresumen = document.querySelector('#resumen');
@@ -17,7 +17,7 @@ export function cargarCarrito()
     if (carrito.length == 0) 
     {
         divresumen.style = "border-top: 0px";
-        divresumen.innerHTML = '<p>No se encontraron productos.</p>';
+        divresumen.innerHTML = '<em>No hay items en el carrito.</em>';
     }
 
     // Recorro el JSON
@@ -56,17 +56,7 @@ export function cargarCarrito()
     // Actualizo el data-cantidad del resumen
     const indicadorCantidadItems = document.querySelector('#indicadorCantidadItems');
     indicadorCantidadItems.innerHTML = cantidadArticulos;
-
-
-
-
-
-
-
-
-
-
-
+    
     return carrito;
 
 }
