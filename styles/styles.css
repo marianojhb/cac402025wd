@@ -369,6 +369,11 @@ footer>.footer-container {
 }
 
 
+.btnAgregar {
+  background-color: #1c75d8;
+  transition: filter 0.3s ease;
+  border: black;
+}
 
 
 .btnAgregar,
@@ -696,7 +701,7 @@ footer>.footer-container {
 
 
   /* Wrapper to keep video centered */
-/* .video-wrapper {
+.video-wrapper {
   position: fixed;      
   top: 0;
   left: 0;
@@ -704,11 +709,65 @@ footer>.footer-container {
   height: 100vh;
   overflow: hidden;
   z-index: -1;          
-} */
+}
 
 /* Style the video */
-/* .video-wrapper video {
+.video-wrapper video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-} */
+}
+
+
+@keyframes cart-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.cart-pop {
+  animation: cart-pop 0.3s ease;
+}
+
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#contacto label {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contacto button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#contacto button:hover {
+  background-color: #0056b3;
+}

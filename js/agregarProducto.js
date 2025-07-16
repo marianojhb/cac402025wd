@@ -1,5 +1,6 @@
     import { cargarCarrito } from "./cargarCarrito.js";
-    
+    import { animarCarrito } from "./animarCarrito.js";
+
     export function agregarProducto(event)
     {
       const olcarrito = document.querySelector('#listado ol');
@@ -29,6 +30,7 @@
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carrito.push(item);
         localStorage.setItem('carrito', JSON.stringify(carrito));
+        animarCarrito();
         cargarCarrito();
       } 
       else

@@ -19,7 +19,25 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     await injector('../template/footer.html', 'footer');
     await injector('index2.html', '#ContentPlaceholder');
     
-    
+    let themeToggler = document.getElementById('themeToggler');
+    themeToggler.addEventListener('click', ()=> {
+        if(themeToggler.classList.contains('fa-moon'))
+        {
+            themeToggler.classList.add('fa-sun');
+            document.body.classList.add('theme-light');
+            themeToggler.classList.remove('fa-moon');
+            document.body.classList.remove('theme-dark');
+        } else
+        {
+            themeToggler.classList.add('fa-moon');
+            document.body.classList.add('theme-dark');
+            themeToggler.classList.remove('fa-sun');
+            document.body.classList.remove('theme-light');
+        }
+    })
+
+
+
     // Pagina inicial
     
     let botonentrar = document.querySelector('#entrar');
