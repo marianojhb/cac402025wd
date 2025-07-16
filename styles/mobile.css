@@ -273,7 +273,8 @@ footer>.footer-container {
 #contentcarrito {
     margin: 0px;
     text-align: left;
-    color: black;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -467,10 +468,11 @@ footer>.footer-container {
 /* checkout */
 
 .formcheckout {
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
     padding: 0.1em;
-    background: #f8f8f8;
+    background: var(--color-bg);
+    color: var(--color-text);
     border-radius: 10px;
     font-family: sans-serif;
 }
@@ -483,7 +485,7 @@ footer>.footer-container {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #333;
+    color: var(--color-text);
 }
 
 .formcheckout input,

@@ -257,14 +257,19 @@ footer>.footer-container {
 }
 
 
+#liTheme {
+  margin-left: auto;
+
+}
+
+
 /* Contenido carrito */
 
 #shoppingcart {
   position: relative;
-  margin-left: auto;
   width: 7em;
   text-align: right;
-  margin-left: auto;
+  
 }
 
 #divcarrito {
@@ -277,9 +282,9 @@ footer>.footer-container {
   opacity: 1;
   transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.3s;
   pointer-events: none;
-  background-color: var(--color-secondary);
+  
   border-radius: 1em;
-
+  
 }
 
 #shoppingcart:hover #divcarrito {
@@ -302,7 +307,8 @@ footer>.footer-container {
 #contentcarrito {
   margin: 0px;
   text-align: left;
-  color: black;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -520,7 +526,8 @@ footer>.footer-container {
   width: 800px;
   margin: 2em auto;
   padding: 2em;
-  background: #f8f8f8;
+  background: var(--color-bg);
+  color: var(--color-text);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
@@ -534,7 +541,7 @@ footer>.footer-container {
   display: block;
   margin-bottom: 0.5em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text);
 }
 
 .formcheckout input,
