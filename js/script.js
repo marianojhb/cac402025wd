@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     await injector('index2.html', '#ContentPlaceholder');
     
     let themeToggler = document.getElementById('themeToggler');
-    themeToggler.addEventListener('click', ()=> {
+    await themeToggler.addEventListener('click', ()=> {
         if(themeToggler.classList.contains('fa-moon'))
         {
             themeToggler.classList.add('fa-sun');
