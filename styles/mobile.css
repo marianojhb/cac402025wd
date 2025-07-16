@@ -2,8 +2,6 @@
 /* Header */
 header {
   width: 100%;
-  border-top: 4px solid dodgerblue;
-  border-bottom: 15px solid dodgerblue;
   background-color: dodgerblue;
   z-index: 999;
 }
@@ -16,22 +14,26 @@ header {
 header>.header-container>.header-title {
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   color: white;
-  width: 100%;
-  max-width: 1280px;
+        width: 100%;
   gap: 0em;
   margin: 0 auto;
   user-select: none;
+  height: 30px;
 }
+
+header>.header-container>.header-title h1
+{display: none}
 
 
 .header-container>.header-title>#logo {
-  display: inline-block;
-
-  height: 68px;
-  width: 707px;
+  display: block;
+  
+    transform: scale(0.4);
+  height: 67px;
+  width: 270px;
   background-image: url('../img/logo.png');
 }
 
@@ -44,11 +46,8 @@ nav
   z-index: 9999;
 }
 #navcontent {
-  margin-bottom: 2em;
-  max-width: 1280px;
-  margin-bottom: 2em;
-  margin: 0px auto;
-  
+  margin-bottom: 0em;
+  max-width: 100%;  
 }
 
 #navcontent > ul {
@@ -58,7 +57,7 @@ nav
 
 #navcontent>ul>li {
   display: inline-block;
-  padding: 1em;
+  padding: 0.4em 1em;
   color: white;
 }
 
@@ -67,25 +66,21 @@ nav
   color: white;
 }
 
-#navcontent>ul>li:hover {
-  text-decoration: underline;
-}
-
 /* Container */
 .container {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0px auto;
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  padding-bottom: 20em;
+  padding-bottom: 10em;
 
 }
 
 /* var(--color-bg) */
 main {
-  margin-top: 10px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -94,6 +89,7 @@ main {
 
 .productos {
   display: flex;
+  flex-direction: column;
 }
 
 .quienes {
@@ -132,18 +128,19 @@ main {
 
 .categorias {
   display: flex;
-  flex-basis: 13.4em;
+  flex-direction: row;
+  flex-basis: 3em;
   flex-shrink: 0;
   flex-grow: 0;
 }
 
 .categorias>ul {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 1px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 1px;
   list-style-type: none;
   font-weight: bolder;
   padding-inline-start: 0px;
@@ -158,7 +155,7 @@ main {
 .contenido {
   padding: 10px;
   padding-right: 0px;
-  max-width: calc(1280px - 12em);
+  max-width: 100%;
 }
 
 .categoria-item {
@@ -216,17 +213,17 @@ footer>.footer-container {
   line-height: 1.7em;
   margin: 0px auto;
   display: flex;
-  gap: 10em;
+  gap: 0em;
   justify-content: space-evenly;
-  max-width: 1280px;
+  align-items: stretch;
   color: white;
   font-size: 1.1em;
-
+  font-size: smaller;
 }
 
 .footer-container>ul {
-  min-width: 20em;
   list-style-type: none;
+  padding-left: 0px;
 }
 
 .footer-container a,
@@ -234,10 +231,6 @@ footer>.footer-container {
   color: white;
   text-decoration: none;
   cursor: pointer;
-}
-
-.footer-container li:hover {
-  text-decoration: underline;
 }
 
 
@@ -268,7 +261,7 @@ footer>.footer-container {
 
 #shoppingcart:hover #divcarrito {
   top: 50px;
-  width: 600px;
+  width: 350px;
   max-height: 1000px;
   opacity: 1;
   pointer-events: auto;
@@ -303,9 +296,10 @@ footer>.footer-container {
 .gridproductos {
   display: flex;
   flex-flow: row wrap;
-  justify-content:space-between;
+  justify-content:center;
   gap: 1em;
   align-items: stretch;
+  width: 400px;
 }
 
 .card {
@@ -321,11 +315,6 @@ footer>.footer-container {
   transition: all 0.3s ease;
 }
 
-.card:hover {
-  border-color: var(--color-primary);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
 
 .card img {
   height: 300px;
@@ -345,7 +334,9 @@ footer>.footer-container {
 .card-footer {
   margin-top: auto;
   text-align: center;
-  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  padding: 0.4em;
 }
 
 .btnAgregar {
@@ -361,16 +352,6 @@ footer>.footer-container {
   display: block;
 }
 
-
-.btnAgregar:hover {
-  background-color: #1c75d8;
-  transition: filter 0.3s ease;
-  border: black;
-}
-
-
-
-
 .btnAgregar,
 .btnAgregar:hover,
 .btnAgregar:focus,
@@ -379,22 +360,22 @@ footer>.footer-container {
 }
 
 .lblCantidad {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .cantidad {
   width: 2em;
-  line-height: 2em;
+  line-height: 1.5em;
   border: none;
   border-bottom: solid 2px var(--color-secondary);
-  margin-left: auto;
+  margin-left: 1em;
   outline: none;
   text-align: center;
 }
 
 .product-text {
   display: flex;
-  padding-left: 2em;
+  padding-left: 0em;
   height: 100%;
   flex-flow: column wrap;
   max-height: 19em;
@@ -410,55 +391,55 @@ footer>.footer-container {
 
 .liCategorias
 {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
+
+.liCategorias li {
+    flex: 1;
+    display: flex;
+}
+
 .liCategorias a,
 .liCategorias a:visited,
 .liCategorias a:active {
-  color: white;
+    min-height: 80px;
+    color: white;
   text-decoration: none;
-  display: block;
+  display: flex;
   text-transform: uppercase;
-  font-style:italic;
-  font-size: larger;
-  transition: transform 0.1s ease-out;
-  padding: 10px;
-    padding-inline-start: 2em;  
-  padding-right: 2px;
+  font-size:small;
+  padding: 2px;
   margin-right: 0px;
-  line-height: 3em;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #eeeeee, #666666);
+  line-height: 2em;
+  background-color:#666666;
   border-radius: 0.1em;
-  transition: background 1s ease;
-
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  margin: 1px;
 }
 
-.liCategorias a:hover {
-  transform: translateX(1px);
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd ;
-  background: linear-gradient(135deg, #eeeeee, #666666);
-  /* background-color: #dfdfdf; */
-
-}
 
 #botonesCarrito {
-  margin-top: 3em;
+  margin-top: 2em;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
   width: 100%;
 
 }
 
 #botonesCarrito button {
   background-color: dodgerblue;
-  padding: 0.75em;
+  padding: 0.6em;
   border-radius: 0.5em;
   color: white;
   border: none;
-  width: 10em;
+  width: 100%;
   transition: filter 0.3s ease;
   cursor: pointer;
   font-size: 1em;
@@ -466,9 +447,6 @@ footer>.footer-container {
   transition: background-color 0.2s;
 }
 
-#botonesCarrito button:hover {
-  background-color: #1c75d8;
-}
 
 #listado ol
 {
@@ -479,6 +457,7 @@ footer>.footer-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: 5px;
 
 }
 
@@ -496,12 +475,11 @@ footer>.footer-container {
 /* checkout */
 
 .formcheckout {
-  width: 800px;
-  margin: 2em auto;
-  padding: 2em;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0.1em;
   background: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
 }
 
@@ -518,8 +496,8 @@ footer>.footer-container {
 
 .formcheckout input,
 .formcheckout textarea {
-  width: 100%;
-  padding: 0.75em;
+  width: 400px;
+  padding: 0.1em;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
@@ -534,7 +512,7 @@ footer>.footer-container {
 }
 
 .formcheckout #botonEnviar {
-  width: 20em;
+  width: 100%;
   margin: 0 auto;
   padding: 0.75em;
   background-color: dodgerblue;
@@ -694,21 +672,20 @@ footer>.footer-container {
     border-radius: 0.5em;
   }
 
-
-  /* Wrapper to keep video centered */
-/* .video-wrapper {
-  position: fixed;      
+/* Wrapper to keep video centered */
+.video-wrapper {
+  position: fixed;      /* so it fills the screen */
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1;          
-} */
+  z-index: -1;          /* optional: if it's a background */
+}
 
 /* Style the video */
-/* .video-wrapper video {
+.video-wrapper video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-} */
+}

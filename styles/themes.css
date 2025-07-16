@@ -1,0 +1,34 @@
+/* Temas */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary: dodgerblue;
+  --color-secondary: #dddddd;
+}
+
+.theme-light {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary: dodgerblue;
+  --color-secondary: #dddddd;
+}
+
+.theme-dark {
+  --color-bg: #444;
+  --color-text: #f1f1f1;
+  --color-primary: #bb86fc;
+  --color-secondary: #ffffff15;
+}
+
+/* General */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

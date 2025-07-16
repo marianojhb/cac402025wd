@@ -2,12 +2,9 @@
   <div class="container">
     <main>
         <h1>Checkout</h1>
-        <form
-        action="https://formspree.io/f/mvgrnrvb"
-        method="POST"
-        id="checkout"
-        >
+        
         <div class="formcheckout">
+
 
             <div>
             <label >Resumen</label><br>
@@ -16,11 +13,16 @@
                 <br>
                 <hr>
                 <br>
-                <p>Suma total: <span id="sumatotal"></span></p>
+                <p style="overflow: hidden;"><div style="float:left">Total: </div><div style="float: right" id="sumatotal"></div></p>
             </div>
 
         </div>
-        
+<!-- https://formspree.io/f/mvgrnrvb -->
+        <form
+        action="https://formspree.io/f/mvgrnrvb"
+        method="POST"
+        id="checkout"
+        >
         <div class="formcheckout">
         
             <div>

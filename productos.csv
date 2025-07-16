@@ -1,0 +1,37 @@
+categoria,producto,codigo,stock,precio,imagen
+chapas,Chapa Sinusoidal Cincalum X Metro Calibre 25,chap25cinc,355,10793,./img/productos/chap25cinc.jpg
+chapas,Chapa Sinusoidal Cincalum X Metro Calibre 27,chap27cinc,360,9086,./img/productos/chap27cinc.jpg
+chapas,Chapa Lisa Laminada En Frio C22 1.22 X 2.44 Mts,laf22,0,38880,./img/productos/laf22.jpg
+chapas,Chapa Lisa Laminada En Frio C24 1.22 X 2.44 Mts,laf24,0,31125,./img/productos/laf24.jpg
+chapas,Chapa Lisa Prepintada Color C25 1.22 X 2.44 Mts,lisacolor,150,43460,./img/productos/lisacolor.jpg
+chapas,Chapa Sinusoidal Galvanizada X Metro Calibre 25,chap25g,859,10291,./img/productos/chap25g.jpg
+chapas,Chapa Sinusoidal Galvanizada X Metro Calibre 27,KA2412,360,21862,./img/productos/KA2412.jpg
+chapas,Chapa Sinusoidal Prepintada X Metro Calibre 25,chap25prep,540,45205,./img/productos/chap25prep.jpg
+chapas,Chapa Tejado Metálico Curvin Prepintado Color X Metro,C-61,140,20305,./img/productos/C-61.jpg
+chapas,Chapa Trapezoidal Cincalum X Metro Calibre 25,chaptrap25,360,32128,./img/productos/chaptrap25.jpg
+chapas,Chapa Trapezoidal Cincalum X Metro Calibre 27,chaptrap27,360,28153,./img/productos/chaptrap27.jpg
+aislaciones,Cielorraso Rústico Andina Isover Caja X 16 Placas,A-191,5,191721,./img/productos/A-191.jpg
+aislaciones,Acuflex Barrera Acustica,A-2004,2,71823,./img/productos/A-2004.jpg
+aislaciones,Acustiver P 50 Mm Isover,A-700,3,139180,./img/productos/A-700.jpg
+aislaciones,Acustiver P500 Isover,A-710,2,165603,./img/productos/A-710.jpg
+aislaciones,Airtech 10Mm De 1 X 30 Mts 1 Cara C/aluminio,A-159,3,76300,./img/productos/A-159.jpg
+aislaciones,"Cinta Climaver Isover Fasson 7,6 Cm X 45,7 Mts",A-1142,23,29300,./img/productos/A-1142.jpg
+aislaciones,Espuma Bekover,Bekover2 ,10,10398,./img/productos/Bekover2.jpg
+construccionenseco,Enduido Durlock,enduido2,8,11154,./img/productos/enduido2.jpg
+construccionenseco,Masilla Durlock Lpu Bolsa 25 K,A-55,8,16140,./img/productos/A-55.jpg
+construccionenseco,Angulo De Ajuste,A-79,170,878,./img/productos/A-79.jpg
+construccionenseco,Cantonera,A-74,200,1506,./img/productos/A-74.jpg
+construccionenseco,Cinta Gasa Autoadhesiva Para Durlock X 90 Mts,A-63,12,5973,./img/productos/A-63.jpg
+construccionenseco,Cinta Papel Para Durlock,A-60,20,34066,./img/productos/A-60.jpg
+construccionenseco,Masilla Durlock Secado Rapido 25 K,A-57,10,22800,./img/productos/A-57.jpg
+estructurales,"Tubo Estructural 80X80Mm X 6,00 Mts X 2Mm De Espesor",tubo80x802mm,,57855,./img/productos/tubo80x802mm.jpg
+estructurales,"Tubo Estructural 100X100 Mm X 6,00 Mts X 2Mm De Espesor",tubo100x100,,76128,./img/productos/tubo100x100 .jpg
+estructurales,"Tubo Estructural 1 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",tubo1x16,,11546,./img/productos/tubo1x16.jpg
+estructurales,"Tubo Estructural 1 Y 1/4 Pulgada X 6,00 Mts X 1.6 Mm De Espesor",tubo114x16mm,,16729,./img/productos/tubo114x16mm.jpg
+estructurales,"Tubo Estructural 15X15 Mm X 6,00 Mts X 1.2 Mm De Espesor",C-17,,7015,./img/productos/C-17.jpg
+estructurales,"Tubo Estructural 2 Pulgadas X 6,00 Mts X 1.6 Mm De Espesor",tubo2x16mm,,27000,./img/productos/tubo2x16mm.jpg
+estructurales,"Tubo Estructural 2 Pulgadas X 6,00 Mts X 2 Mm De Espesor",tubo2x2mm,,31224,./img/productos/tubo2x2mm.jpg
+estructurales,"Tubo Estructural 20X20 Mm X 6,00 Mts X 0.9 Mm De Espesor",C-16,,7266,./img/productos/C-16.jpg
+estructurales,"Tubo Estructural 20X20 Mm X 6,00 Mts X 1.2 Mm De Espesor",C-20,,9459,./img/productos/C-20.jpg
+estructurales,"Tubo Estructural 20X20 Mm X 6,00 Mts X 1.6 Mm De Espesor",C-46,,12386,./img/productos/C-46.jpg
+estructurales,"Tubo Estructural 20X30 Mm X 6,00 Mts X 1.2 Mm De Espesor",C-37,,11922,./img/productos/C-37.jpg
