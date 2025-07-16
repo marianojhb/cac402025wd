@@ -75,13 +75,7 @@ export async function checkout() {
 
                     // Remover visual con animación
                     const li = document.getElementsByClassName('licheckout')[index];
-                    if (li) {
-                        li.classList.add('animate__animated', 'animate__fadeOutRight');
-                        setTimeout(() => {
-                            li.remove();
-                        }, 400);
-                    }
-
+  
                     // Actualiza datos
                     carrito.splice(index, 1);
 
