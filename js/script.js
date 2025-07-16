@@ -20,25 +20,24 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
     let themeToggler = document.getElementById('themeToggler');
 
+
     if (themeToggler) {
-        await themeToggler.addEventListener('click', async () => {
-            if (themeToggler.classList.contains('fa-moon')) {
-                themeToggler.classList.add('fa-sun');
-                document.body.classList.add('theme-light');
-                themeToggler.classList.remove('fa-moon');
-                document.body.classList.remove('theme-dark');
-            } else {
-                themeToggler.classList.add('fa-moon');
-                document.body.classList.add('theme-dark');
-                themeToggler.classList.remove('fa-sun');
-                document.body.classList.remove('theme-light');
+        themeToggler.addEventListener('click', () => {
+            document.body.classList.toggle("theme-dark");
+            if (themeToggler.classList.contains('fa-moon'))
+            {
+                themeToggler.classList.replace('fa-moon', 'fa-sun');
+
+            } else if (themeToggler.classList.contains('fa-sun'))
+            {
+                themeToggler.classList.replace('fa-sun', 'fa-moon');
+
             }
-        })
-    } else {
-        console.warn('⚠️ themeToggler not found in DOM');
+        });
+    } else
+    {
+        console.warn(`No exite el elemento themeToggler`);
     }
-
-
 
     // Pagina inicial
 

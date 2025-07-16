@@ -6,13 +6,6 @@
   --color-secondary: #dddddd;
 }
 
-.theme-light {
-  --color-bg: #ffffff;
-  --color-text: #000000;
-  --color-primary: dodgerblue;
-  --color-secondary: #dddddd;
-}
-
 .theme-dark {
   --color-bg: #444;
   --color-text: #f1f1f1;
