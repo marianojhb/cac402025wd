@@ -63,7 +63,7 @@ export async function cargarCarrito() {
     let botonesCarrito = document.getElementsByClassName('eliminarItem');
     Object.values(botonesCarrito).forEach((boton, index) => {
         boton.addEventListener('click', () => {
-
+            
             boton.parentElement.style.display = "none";
             carrito.splice(index, 1)
             localStorage.setItem('carrito', JSON.stringify(carrito));
@@ -83,8 +83,7 @@ export async function cargarCarrito() {
                 document.getElementsByClassName('licheckout')[index].style.display = "none";
                 document.getElementById('sumatotal').innerHTML = `${nuevoTotalFormateado}<button class="eliminarItemEnCheckout" style="visibility: hidden;"><i class="fa-solid fa-xmark"></i></button>`;
             }
-
-
+            cargarCarrito();
         });
     });
 

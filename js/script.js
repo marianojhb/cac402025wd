@@ -8,7 +8,7 @@ import { conectarBotonesCheckout } from './conectarBotonesCheckout.js';
 import { checkout } from './checkout.js';
 
 // desabilitar todos los mensajes DEBUG
-console.log = function () {};
+// console.log = function () {};
 
 document.addEventListener('DOMContentLoaded', async (event) => {
 

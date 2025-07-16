@@ -13,7 +13,7 @@ export async function checkout() {
         muestraProductos();
         ocultarShoppingCart();
         return;
-    }  
+    }
     let sumaTotal = 0.0;
     const checkoutresumen = document.getElementById('checkoutresumen');
     const cartelsumatotal = document.getElementById('sumatotal');
@@ -59,29 +59,61 @@ export async function checkout() {
 
         cartelsumatotal.innerHTML = `${cartelsumatotalFormateado}<button class="eliminarItemEnCheckout" style="visibility: hidden;"><i class="fa-solid fa-xmark"></i></button>`;
 
-        let botonesEliminarItemEnCheckout = document.getElementsByClassName('eliminarItemEnCheckout') || null; // un objeto 
+        recargar();
 
-        Object.values(botonesEliminarItemEnCheckout).forEach( (boton, index)=> {
-            boton.addEventListener('click', ()=> {
-                carrito.splice(index, 1);
-                document.getElementsByClassName('licheckout')[index].style.display = "none";
-                localStorage.setItem('carrito', JSON.stringify(carrito))
-                let nuevoSubtotal = carrito.reduce( (acumulador, i) => acumulador + i.subtotal, 0);
-                let nuevaCantidad = carrito.reduce( (acumulador, i) => acumulador + 1, 0);
-                document.querySelector('#indicadorCantidadItems').innerHTML = nuevaCantidad;
-                let nuevoSubtotalFormateado = '$ ' + nuevoSubtotal.toLocaleString('es-AR', {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2
+        function recargar() {
+
+
+            let botonesEliminarItemEnCheckout = document.getElementsByClassName('eliminarItemEnCheckout'); // un objeto 
+
+            Array.from(botonesEliminarItemEnCheckout).forEach((boton) => {
+                boton.addEventListener('click', async (event) => {
+
+                    const index = parseInt(event.currentTarget.dataset.item);
+
+                    if (isNaN(index)) return;
+
+                    // Remover visual con animación
+                    const li = document.getElementsByClassName('licheckout')[index];
+                    if (li) {
+                        li.classList.add('animate__animated', 'animate__fadeOutRight');
+                        setTimeout(() => {
+                            li.remove();
+                        }, 400);
+                    }
+
+                    // Actualiza datos
+                    carrito.splice(index, 1);
+
+                    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                    let nuevoSubtotal = carrito.reduce((acumulador, i) => acumulador + i.subtotal, 0);
+                    let nuevaCantidad = carrito.reduce((acumulador, i) => acumulador + 1, 0);
+
+                    document.querySelector('#indicadorCantidadItems').innerHTML = nuevaCantidad;
+
+
+                    let nuevoSubtotalFormateado = '$ ' + nuevoSubtotal.toLocaleString('es-AR', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    })
+
+                    cartelsumatotal.innerHTML = `${nuevoSubtotalFormateado}<button class="eliminarItemEnCheckout" style="visibility: hidden;"><i class="fa-solid fa-xmark"></i></button>`;
+                    
+                    checkoutresumen.innerHTML = '';
+
+                    checkout();
+                    // document.getElementsByClassName('licheckout')[index].style.display = "none";
+                    // cargarCarrito(); // para el carrito de compras del nav
+
+
+                    // console.log(index); // TODO: el indice se tienen que resetear para que sincronice con el carrito del nav
                 })
-                cartelsumatotal.innerHTML = `${nuevoSubtotalFormateado}<button class="eliminarItemEnCheckout" style="visibility: hidden;"><i class="fa-solid fa-xmark"></i></button>`;
-
-                cargarCarrito();
-                
             })
-        })
+        }
     }
 
-    
+
 
 
     // Agregamos un evento para el boton enviar formulario
