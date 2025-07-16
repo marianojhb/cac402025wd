@@ -1,6 +1,3 @@
-import { showPage } from "./showPage.js";
-import { muestraProductos } from "./muestraProductos.js";
-
 export async function cargarCarrito() {
 
     // Ubico el lugar donde se va a cargar

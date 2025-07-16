@@ -3,7 +3,6 @@ import { cargarCarrito } from "./cargarCarrito.js";
 import { crearElementoHTML } from "./crearElementoHTML.js"
 import { ubicarElementoHTML } from "./ubicarElementoHTML.js";
 import { agregarProducto } from "./agregarProducto.js";
-import { vaciarCarrito } from "./vaciarCarrito.js";
 
 export async function mostrarCategoria(categoria) {
     if (!categoria) categoria = '';

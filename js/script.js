@@ -2,7 +2,6 @@
 import { showPage } from './showPage.js';
 import { injector } from './injectHtml.js';
 import { cargarCarrito } from './cargarCarrito.js';
-import { enviarFormulario } from './enviarFormulario.js';
 import { conectarBotonVaciar } from './conectarBotonVaciar.js';
 import { muestraProductos } from './muestraProductos.js';
 import { conectarBotonesCheckout } from './conectarBotonesCheckout.js';
@@ -13,11 +12,11 @@ import { checkout } from './checkout.js';
 
 document.addEventListener('DOMContentLoaded', async (event) => {
 
-    await injector('../template/head.html', 'head');
-    await injector('../template/header.html', 'header');
-    await injector('../template/nav.html', 'nav');
-    await injector('../template/footer.html', 'footer');
-    await injector('index2.html', '#ContentPlaceholder');
+    await injector('./template/head.html', 'head');
+    await injector('./template/header.html', 'header');
+    await injector('./template/nav.html', 'nav');
+    await injector('./template/footer.html', 'footer');
+    await injector('./index2.html', '#ContentPlaceholder');
 
     let themeToggler = document.getElementById('themeToggler');
 

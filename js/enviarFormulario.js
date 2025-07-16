@@ -1,5 +1,3 @@
-import { cargarCarrito } from "./cargarCarrito.js";
-
 export function enviarFormulario(event) {
     event.preventDefault();
 
