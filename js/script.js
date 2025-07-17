@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
             document.getElementById('ContentPlaceholder').dataset.page = 'productos';
 
-            document.title = "Productos | Insuma SRL";
+            document.title = "Productos | Inzuma SRL";
 
             await showPage('productos.html', '#ContentPlaceholder');
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
             // index.html ///////////////////
             if (link == "index") {
 
-                document.title = "Insuma SRL";
+                document.title = "Inzuma SRL";
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'index';
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                     botonentrar.addEventListener('click', async () => {
 
-                        document.title = "Productos | Insuma SRL";
+                        document.title = "Productos | Inzuma SRL";
 
                         await showPage('productos.html', '#ContentPlaceholder');
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'productos';
 
-                document.title = "Productos | Insuma SRL";
+                document.title = "Productos | Inzuma SRL";
 
                 await showPage('productos.html', '#ContentPlaceholder');
 
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
             // checkout.html ///////////////////
             if (link == "checkout") {
 
-                document.title = "Checkout | Insuma SRL";
+                document.title = "Checkout | Inzuma SRL";
                 document.getElementById('ContentPlaceholder').dataset.page = 'checkout';
 
 
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
                 document.getElementById('ContentPlaceholder').dataset.page = 'contacto';
 
 
-                document.title = "Contacto | Insuma SRL";
+                document.title = "Contacto | Inzuma SRL";
 
                 await showPage('contacto.html', '#ContentPlaceholder');
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
                 document.getElementById('ContentPlaceholder').dataset.page = 'ayuda';
 
 
-                document.title = "Ayuda | Insuma SRL";
+                document.title = "Ayuda | Inzuma SRL";
 
                 await showPage('ayuda.html', '#ContentPlaceholder');
 
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'quienessomos';
 
-                document.title = "Quienes somos | Insuma SRL";
+                document.title = "Quienes somos | Inzuma SRL";
 
                 await showPage('quienessomos.html', '#ContentPlaceholder');
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'resenas';
 
-                document.title = "Reseñas | Insuma SRL";
+                document.title = "Reseñas | Inzuma SRL";
 
                 await showPage('resenas.html', '#ContentPlaceholder');
 
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'ubicacion';
 
-                document.title = "Ubicación | Insuma SRL";
+                document.title = "Ubicación | Inzuma SRL";
 
                 await showPage('ubicacion.html', '#ContentPlaceholder');
 
