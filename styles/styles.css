@@ -304,10 +304,15 @@ footer>.footer-container {
 
 .hidden {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 .visible {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
 }
 
 #btnshoppingcart
