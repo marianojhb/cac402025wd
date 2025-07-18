@@ -6,9 +6,10 @@ import { conectarBotonVaciar } from './conectarBotonVaciar.js';
 import { muestraProductos } from './muestraProductos.js';
 import { conectarBotonesCheckout } from './conectarBotonesCheckout.js';
 import { checkout } from './checkout.js';
+import { conectarBotonShoppingCart } from './conectarBotonShoppingCart.js';
 
 // desabilitar todos los mensajes DEBUG
-console.log = function () {};
+// console.log = function () {};
 
 document.addEventListener('DOMContentLoaded', async (event) => {
 
@@ -24,18 +25,15 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     if (themeToggler) {
         themeToggler.addEventListener('click', () => {
             document.body.classList.toggle("theme-dark");
-            if (themeToggler.classList.contains('fa-moon'))
-            {
+            if (themeToggler.classList.contains('fa-moon')) {
                 themeToggler.classList.replace('fa-moon', 'fa-sun');
 
-            } else if (themeToggler.classList.contains('fa-sun'))
-            {
+            } else if (themeToggler.classList.contains('fa-sun')) {
                 themeToggler.classList.replace('fa-sun', 'fa-moon');
 
             }
         });
-    } else
-    {
+    } else {
         console.warn(`No exite el elemento themeToggler`);
     }
 
@@ -191,6 +189,8 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     await cargarCarrito();
 
     conectarBotonesCheckout();
+
+    conectarBotonShoppingCart();
 
 
 

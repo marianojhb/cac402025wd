@@ -64,7 +64,15 @@ nav
   max-width: 1280px;
   margin-bottom: 2em;
   margin: 0px auto;
-  
+}
+
+#navcontent,
+#navcontent a,
+#navcontent button,
+#navcontent li
+{
+  font-size: large;
+  color: white;
 }
 
 #navcontent > ul {
@@ -259,7 +267,6 @@ footer>.footer-container {
 
 #liTheme {
   margin-left: auto;
-
 }
 
 
@@ -267,7 +274,6 @@ footer>.footer-container {
 
 #shoppingcart {
   position: relative;
-  width: 7em;
   text-align: right;
   
 }
@@ -279,7 +285,6 @@ footer>.footer-container {
   width: 600px;
   max-height: 0px;
   overflow: hidden;
-  opacity: 1;
   transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.3s;
   pointer-events: none;
   
@@ -287,15 +292,28 @@ footer>.footer-container {
   
 }
 
-#shoppingcart:hover #divcarrito {
+#shoppingcart #divcarrito {
   top: 50px;
   width: 600px;
   max-height: 1000px;
-  opacity: 1;
   pointer-events: auto;
   transition: opacity 0.3s ease, visibility 0s linear 0s;
   z-index: 999;
   overflow-y: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.visible {
+    opacity: 1;
+}
+
+#btnshoppingcart
+{
+  background-color: transparent;
+  border: none;
 }
 
 #shoppingcart.force-hide #divcarrito

@@ -50,6 +50,15 @@ nav {
     max-width: 100%;
 }
 
+#navcontent,
+#navcontent a,
+#navcontent button,
+#navcontent li
+{
+  font-size: large;
+  color: white;
+}
+
 #navcontent>ul {
     display: flex;
     list-style: none;
@@ -234,39 +243,32 @@ footer>.footer-container {
 #shoppingcart {
     position: relative;
     margin-left: auto;
-    width: 7em;
     text-align: right;
     margin-left: auto;
 }
 
 #divcarrito {
-    position: absolute;
-    right: 0;
-    top: 50px;
-    width: 600px;
-    max-height: 0px;
-    overflow: hidden;
-    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
     transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.3s;
     pointer-events: none;
     background-color: var(--color-secondary);
-    border-radius: 1em;
+    color: black;
 
 }
 
-#shoppingcart:hover #divcarrito {
-    top: 50px;
-    width: 350px;
-    max-height: 1000px;
-    opacity: 1;
+
+#shoppingcart #divcarrito {
     pointer-events: auto;
     transition: opacity 0.3s ease, visibility 0s linear 0s;
     z-index: 999;
-    overflow-y: auto;
+    overflow-y: auto; 
 }
 
 #shoppingcart.force-hide #divcarrito {
-    opacity: 0;
     visibility: hidden;
 }
 
@@ -287,6 +289,19 @@ footer>.footer-container {
 }
 
 
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.visible {
+    opacity: 1;
+}
+
+#btnshoppingcart
+{
+  background-color: transparent;
+  border: none;
+}
 
 .gridproductos {
     display: flex;
