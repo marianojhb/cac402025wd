@@ -252,7 +252,7 @@ footer>.footer-container {
     position: fixed;
     width: 100%;
     height: 100vh;
-    top: 0px;
+    top: 0vh;
     left: 0px;
     transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.3s;
     pointer-events: none;
@@ -467,6 +467,18 @@ footer>.footer-container {
     font-size: 1em;
     display: block;
     transition: background-color 0.2s;
+}
+
+button#btnVaciarCarrito  {
+  background-color: #ff0000;
+}
+
+button#btnSeguirComprando  {
+  background-color: #777777;
+}
+
+button#btnCheckout  {
+  background-color: #00ff00;
 }
 
 
