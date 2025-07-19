@@ -7,6 +7,7 @@ export function conectarBotonesCheckout() {
 
     btnCheckout.addEventListener('click', () => {
         ocultarShoppingCart();
+         
     });
 
     btnSeguirComprando.addEventListener('click', async () => {
@@ -18,6 +19,8 @@ export function conectarBotonesCheckout() {
         muestraProductos();
         
         ocultarShoppingCart();
+
+       
     });   
 
 

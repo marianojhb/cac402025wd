@@ -5,5 +5,6 @@ export function ocultarShoppingCart() {
         sc.classList.remove('force-hide');
         divcarrito.classList.add("hidden");
         divcarrito.classList.remove("visible");  
+        
     });
 }
