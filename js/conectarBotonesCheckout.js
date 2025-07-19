@@ -18,7 +18,7 @@ export function conectarBotonesCheckout() {
         
         muestraProductos();
         
-        ocultarShoppingCart();
+       
 
        
     });   

@@ -338,6 +338,11 @@ footer>.footer-container {
 
 }
 
+#contentcarrito li
+{
+  color: var(--color-text);
+}
+
 
 
 .gridproductos {
@@ -497,6 +502,7 @@ footer>.footer-container {
 
 }
 
+
 #botonesCarrito button {
   background-color: dodgerblue;
   padding: 0.75em;
@@ -513,6 +519,19 @@ footer>.footer-container {
 
 #botonesCarrito button:hover {
   background-color: #1c75d8;
+}
+
+
+button#btnVaciarCarrito  {
+  background-color: #ff0000;
+}
+
+button#btnSeguirComprando  {
+  background-color: #777777;
+}
+
+button#btnCheckout  {
+  background-color: #00ff00;
 }
 
 #listado ol

@@ -251,15 +251,16 @@ footer>.footer-container {
 #divcarrito {
     position: fixed;
     width: 100%;
-    height: 95vh;
-    top: 5vh;
+    height: 100vh;
+    top: 0px;
     left: 0px;
     transition: max-height 0.5s ease, opacity 0.5s ease, linear 0.3s;
     pointer-events: none;
     background-color: var(--color-secondary);
-    color: rgb(255, 244, 244);
-
-
+}
+#divcarrito li
+{
+    color: var(--color-text);
 }
 
 
