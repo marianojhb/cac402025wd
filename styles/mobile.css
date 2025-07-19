@@ -273,6 +273,7 @@ footer>.footer-container {
 
 #shoppingcart.force-hide #divcarrito {
     display: none;
+    visibility: hidden;
 }
 
 #contentcarrito {

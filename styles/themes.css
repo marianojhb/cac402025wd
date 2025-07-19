@@ -8,9 +8,11 @@
 
 .theme-dark {
   --color-bg: #444;
+  --color-bg-darker: #222;
   --color-text: #f1f1f1;
   --color-primary: #bb86fc;
-  --color-secondary: #ffffff15;
+  --color-secondary: #ffffff;
+
 }
 
 /* General */

@@ -10,6 +10,7 @@ export function conectarBotonesCheckout() {
          
     });
 
+    // Boton seguir comprando
     btnSeguirComprando.addEventListener('click', async () => {
 
         await showPage('productos.html', '#ContentPlaceholder');
@@ -18,7 +19,10 @@ export function conectarBotonesCheckout() {
         
         muestraProductos();
         
-       
+        const divcarrito = document.getElementById('divcarrito');
+        divcarrito.classList.toggle("hidden");
+        divcarrito.classList.toggle("visible");
+        container[0].classList.remove("backdrop");
 
        
     });   
@@ -27,6 +31,9 @@ export function conectarBotonesCheckout() {
     btnVaciarCarrito.addEventListener('click', () => {
         setTimeout(() => {
             ocultarShoppingCart();
+            
+            const container = document.getElementsByClassName('container');
+             container[0].classList.remove("backdrop");
 
         }, 1000)
     });
