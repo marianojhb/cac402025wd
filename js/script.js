@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
                 document.title = "Checkout | Inzuma SRL";
                 document.getElementById('ContentPlaceholder').dataset.page = 'checkout';
 
-
                 await showPage('checkout.html', '#ContentPlaceholder');
 
                 checkout();
@@ -123,7 +122,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
             if (link == "contacto" || window.location.pathname.split('/')[1] == "contacto") {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'contacto';
-
 
                 document.title = "Contacto | Inzuma SRL";
 
@@ -136,14 +134,11 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
                 document.getElementById('ContentPlaceholder').dataset.page = 'ayuda';
 
-
                 document.title = "Ayuda | Inzuma SRL";
 
                 await showPage('ayuda.html', '#ContentPlaceholder');
 
             }
-
-
 
             // quienessomos.html ///////////////////
             if (link == "quienessomos") {
@@ -188,11 +183,11 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
     await cargarCarrito();
 
-    conectarBotonesCheckout();
-
-    conectarBotonShoppingCart();
-
-
+    // Add a small delay to ensure DOM is fully ready
+    setTimeout(() => {
+        conectarBotonesCheckout();
+        conectarBotonShoppingCart();
+    }, 100);
 
 })
 
