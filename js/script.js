@@ -9,7 +9,7 @@ import { checkout } from './checkout.js';
 import { conectarBotonShoppingCart } from './conectarBotonShoppingCart.js';
 
 // desabilitar todos los mensajes DEBUG
-// console.log = function () {};
+console.log = function () {};
 
 document.addEventListener('DOMContentLoaded', async (event) => {
 

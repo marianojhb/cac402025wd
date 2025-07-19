@@ -323,7 +323,7 @@ footer>.footer-container {
     justify-content: center;
     gap: 1em;
     align-items: stretch;
-    width: 400px;
+    
 }
 
 .card {
@@ -416,6 +416,8 @@ footer>.footer-container {
 .liCategorias {
     display: flex;
     flex-direction: row;
+    width: 100%;
+
 }
 
 .liCategorias li {

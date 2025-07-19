@@ -9,14 +9,17 @@ export async function muestraProductos() {
             event.preventDefault();
             let target = event.currentTarget;
             let categoria = target.dataset.categoria;
-            target.classList.add('animate__animated', 'animate__lightSpeedOutRight');
+            // target.classList.add('animate__animated', 'animate__lightSpeedOutRight');
+            target.classList.add('animate__animated', 'animate__flipOutX');
 
             target.addEventListener('animationend', () => {
                 mostrarCategoria(categoria);
-                target.classList.add('animate__lightSpeedInRight');
-                target.classList.remove('animate__lightSpeedOutRight');
+                target.classList.add('animate__flipInX');
+                target.classList.remove('animate__flipOutX');
                  }, { once: true }); // solo una vez
-            })
+            // 
+            }
+            )
         })
 
 
