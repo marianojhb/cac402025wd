@@ -253,6 +253,15 @@ footer>.footer-container {
   text-decoration: underline;
 }
 
+#aclaracion
+{
+  text-align: center;
+  color: white;
+}
+
+
+
+/* tema */
 
 #liTheme {
   margin-left: auto;
@@ -511,36 +520,39 @@ footer>.footer-container {
 
 
 button#btnVaciarCarrito {
-  background-color: #ff0000;
+  background-color: #e74c3c ;
   color: white;
   transition: filter 0.2s ease;
 }
 
 button#btnVaciarCarrito:hover {
-  background-color: #ff0000;
-  filter: brightness(50%);
+  background-color: #e74c3c ;
+  filter: brightness(90%);
+  color: white;
 
 }
 button#btnSeguirComprando {
-  background-color: #777777;
+  background-color: #bdc3c7 ;
   color: white;
   transition: filter 0.2s ease;
 }
 
 button#btnSeguirComprando:hover {
-  background-color: #777777;
-  filter: brightness(50%);
+  background-color: #bdc3c7 ;
+  filter: brightness(90%);
+  color: white;
 }
 
 button#btnCheckout {
-  background-color: #00ff00;
+  background-color: #27ae60;
   color: white;
   transition: filter 0.2s ease;
 }
 
 button#btnCheckout:hover {
-   background-color: #00ff00;
-  filter: brightness(50%);
+   background-color: #27ae60 ;
+  filter: brightness(90%);
+  color: white;
 }
 
 #listado ol {
