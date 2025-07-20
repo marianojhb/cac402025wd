@@ -97,6 +97,10 @@ main {
 
 }
 
+main h1{
+    padding: 1em;
+      padding-inline-start: 0.5em;
+}
 .productos {
     display: flex;
     flex-direction: column;
@@ -175,10 +179,11 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    padding:1em;
 }
 
 .review {
-    background: white;
+    background: var(--color-bg);
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -191,7 +196,7 @@ main {
 
 .review h3 {
     margin-top: 0;
-    color: #2c3e50;
+    color: var(--color-text)#2c3e50;
 }
 
 .review p {
@@ -237,6 +242,11 @@ footer>.footer-container {
     cursor: pointer;
 }
 
+#aclaracion
+{
+  text-align: center;
+  color: white;
+}
 
 /* Contenido carrito */
 
@@ -472,16 +482,41 @@ footer>.footer-container {
     transition: background-color 0.2s;
 }
 
-button#btnVaciarCarrito  {
-  background-color: #ff0000;
+
+button#btnVaciarCarrito {
+  background-color: #e74c3c ;
+  color: white;
+  transition: filter 0.2s ease;
 }
 
-button#btnSeguirComprando  {
-  background-color: #777777;
+button#btnVaciarCarrito:hover {
+  background-color: #e74c3c ;
+  filter: brightness(90%);
+  color: white;
+
+}
+button#btnSeguirComprando {
+  background-color: #bdc3c7 ;
+  color: white;
+  transition: filter 0.2s ease;
 }
 
-button#btnCheckout  {
-  background-color: #00ff00;
+button#btnSeguirComprando:hover {
+  background-color: #bdc3c7 ;
+  filter: brightness(90%);
+  color: white;
+}
+
+button#btnCheckout {
+  background-color: #27ae60;
+  color: white;
+  transition: filter 0.2s ease;
+}
+
+button#btnCheckout:hover {
+   background-color: #27ae60 ;
+  filter: brightness(90%);
+  color: white;
 }
 
 
